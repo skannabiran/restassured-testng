@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ReqRes Test Suite">
+    <listeners>
+        <listener class-name="com.gen.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Authentication Tests">
+        <classes>
+            <class name="com.gen.service.user.TestAuthentication">
+                <methods>
+                    <include name="testAuthenticationToken"/>
+                    <include name="testAuthToken"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get Request Tests">
+        <classes>
+            <class name="com.gen.service.user.TestGetRequests">
+                <methods>
+                    <include name="getRequestTest"/>
+                    <include name="getRequestTestWithQueryParam"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Post Request tests">
+        <classes>
+            <class name="com.gen.service.user.TestPostRequests">
+                <methods>
+                    <include name="testPostRequests"/>
+                    <include name="testPostRequestsUsingBuilderPattern"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Put Request Tests">
+        <classes>
+            <class name="com.gen.service.user.TestPutRequests">
+                <methods>
+                    <include name="putRequestsTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Patch Request tests">
+        <classes>
+            <class name="com.gen.service.user.TestPatchRequests">
+                <methods>
+                    <include name="patchRequestTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Delete Requests tests ">
+        <classes>
+            <class name="com.gen.service.user.TestDeleteRequests">
+                <methods>
+                    <include name="deleteRequestTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

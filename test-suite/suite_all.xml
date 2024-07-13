@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="REST-Assured API Test Suite All">
     <suite-files>
-        <suite-file path="reqrestestsuite.xml"></suite-file>
-        <suite-file path="restfulbookersuite.xml"></suite-file>
+        <suite-file path="userservicesuite.xml"></suite-file>
+        <suite-file path="bookingservicesuite.xml"></suite-file>
     </suite-files>
 </suite>
