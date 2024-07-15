@@ -1,6 +1,6 @@
 package com.gen.service.user;
 
-import com.gen.common.UserAPIBaseConfig;
+import com.gen.config.UserAPIBaseConfig;
 import com.gen.data.user.PostData;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;

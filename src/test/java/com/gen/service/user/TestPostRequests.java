@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.gen.common.UserAPIBaseConfig;
+import com.gen.config.UserAPIBaseConfig;
 import com.gen.data.user.PostData;
 import com.gen.data.user.UserData;
 import com.github.javafaker.Faker;

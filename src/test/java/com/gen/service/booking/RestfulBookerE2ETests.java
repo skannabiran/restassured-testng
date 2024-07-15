@@ -6,21 +6,14 @@ import static com.gen.data.booking.TokenBuilder.getToken;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-import com.gen.common.BookingAPIBaseConfig;
+import com.gen.config.BookingAPIBaseConfig;
 import com.gen.data.booking.BookingData;
 import com.gen.data.booking.PartialBookingData;
 import com.gen.data.booking.Tokencreds;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
 import org.hamcrest.Matchers;
-import org.junit.runner.RunWith;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(strict = false, features = "features", format = { "pretty",
-        "html:target/site/cucumber-pretty",
-        "json:target/cucumber.json" }, tags = { "~@ignore" })
 public class RestfulBookerE2ETests extends BookingAPIBaseConfig {
 
     private BookingData newBooking;
